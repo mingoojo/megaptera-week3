@@ -3,18 +3,16 @@ import ReactDOM from 'react-dom/client';
 import App from './app';
 import App2 from './app2';
 
-
-
 function main() {
-  const element = document.getElementById('root');
+	const element = document.getElementById('root');
 
-  if (!element) {
-    return;
-  }
+	if (!element) {
+		return;
+	}
 
-  const root = ReactDOM.createRoot(element);
+	const root = ReactDOM.createRoot(element);
 
-  root.render(<App2 />);
+	root.render(<App2 />);
 }
 
 main();

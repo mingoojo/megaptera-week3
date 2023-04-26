@@ -5,5 +5,5 @@ import App from './App';
 test('App', () => {
 	render(React.createElement(App, {}, null));
 
-	screen.getByText(/Hello, wholeman!/);
+	screen.getByText(/Fruits/);
 });

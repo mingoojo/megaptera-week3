@@ -1,7 +1,6 @@
-import React from 'react';
+import React, {StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app';
-import App2 from './app2';
 
 function main() {
 	const element = document.getElementById('root');
@@ -12,7 +11,11 @@ function main() {
 
 	const root = ReactDOM.createRoot(element);
 
-	root.render(<App2 />);
+	root.render(
+		<StrictMode>
+			<App />
+		</StrictMode>,
+	);
 }
 
 main();

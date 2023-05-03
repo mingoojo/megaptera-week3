@@ -1,6 +1,7 @@
 import React from 'react';
 import CheckBoxField from './checkboxfield';
 import TextField from './TextField';
+import {useEffect} from 'react';
 type SearchBarProps = {
 	filterText: string;
 	setFilterText: (value: string) => void;
